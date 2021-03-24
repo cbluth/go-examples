@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# usage:
+# ./rpc server -tcp :1234
+# ./rpc client -tcp :1234 <<< "ping"
+# ./rpc client -tcp :1234 <<< "put key1 value1"
+# ./rpc client -tcp :1234 <<< "get key1"
+
+set -e
+
+go run . "${@}"
